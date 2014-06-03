@@ -3,7 +3,7 @@
 # ----------------------- #
 
 url: http://sahirbhatnagar.github.io
-title: Sahir Rai Bhatnagar
+title: Sahir Bhatnagar
 subtitle: A PhD student in Statistical Genetics
 author: Sahir Rai Bhatnagar
 simple_search: https://www.google.com/search
@@ -63,8 +63,8 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.
 # ----------------------- #
 
 # Github repositories
-github_user:
-github_repo_count: 0
+github_user: sahirbhatnagar
+github_repo_count: 5
 github_show_profile_link: true
 github_skip_forks: true
 
