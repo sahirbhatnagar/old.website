@@ -3,9 +3,9 @@
 # ----------------------- #
 
 url: http://sahirbhatnagar.github.io
-title: Sahir Rai Bhatnagar
-subtitle: A PhD student in Statistical Genetics
-author: Sahir Rai Bhatnagar
+title: My Octopress Blog
+subtitle: A blogging framework for hackers.
+author: Your Name
 simple_search: https://www.google.com/search
 description:
 
@@ -19,7 +19,7 @@ date_format: "ordinal"
 subscribe_rss: /atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
-email: sahir.bhatnagar@gmail.com
+email:
 
 # ----------------------- #
 #    Jekyll & Plugins     #
