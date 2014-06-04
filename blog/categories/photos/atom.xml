@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Photos | Sahir Bhatnagar]]></title>
+  <link href="http://sahirbhatnagar.github.io/blog/categories/photos/atom.xml" rel="self"/>
+  <link href="http://sahirbhatnagar.github.io/"/>
+  <updated>2014-06-04T16:36:20-04:00</updated>
+  <id>http://sahirbhatnagar.github.io/</id>
+  <author>
+    <name><![CDATA[Sahir Rai Bhatnagar]]></name>
+    <email><![CDATA[sahir.bhatnagar@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[The Title of the Post]]></title>
+    <link href="http://sahirbhatnagar.github.io/blog/2014/06/04/pic/"/>
+    <updated>2014-06-04T16:35:00-04:00</updated>
+    <id>http://sahirbhatnagar.github.io/blog/2014/06/04/pic</id>
+    <content type="html"><![CDATA[<p>This is what’s called the content. This text will be displayed underneath the photo in the photo post.</p>]]></content>
+  </entry>
+  
+</feed>
