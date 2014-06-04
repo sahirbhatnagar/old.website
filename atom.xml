@@ -4,7 +4,7 @@
   <title><![CDATA[Sahir Bhatnagar]]></title>
   <link href="http://sahirbhatnagar.github.io/atom.xml" rel="self"/>
   <link href="http://sahirbhatnagar.github.io/"/>
-  <updated>2014-06-04T15:51:30-04:00</updated>
+  <updated>2014-06-04T15:58:34-04:00</updated>
   <id>http://sahirbhatnagar.github.io/</id>
   <author>
     <name><![CDATA[Sahir Rai Bhatnagar]]></name>
@@ -24,7 +24,7 @@ F(\omega) = \int_{-\infty}^\infty f(t) e^{-i \omega t} \d t.
 <p><span class="math">\[
 C_p (M)=\underbrace{\frac{SS_{res}(M)}{n}}_{\textrm{goodness of fit}} + \underbrace{\frac{2 \sigma^2 p_M}{n}}_{\textrm{complexity}} \normal
 \]</span></p>
-<p><img class="left" src="http://sahirbhatnagar.github.io/images/me.jpg" width="350" height="350" title="image" alt="images"></p>]]></content>
+<p><img src="http://sahirbhatnagar.github.io/images/me.jpg" /></p>]]></content>
   </entry>
   
   <entry>
