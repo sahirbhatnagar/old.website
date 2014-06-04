@@ -4,7 +4,7 @@
   <title><![CDATA[Sahir Bhatnagar]]></title>
   <link href="http://sahirbhatnagar.github.io/atom.xml" rel="self"/>
   <link href="http://sahirbhatnagar.github.io/"/>
-  <updated>2014-06-04T14:46:48-04:00</updated>
+  <updated>2014-06-04T15:13:08-04:00</updated>
   <id>http://sahirbhatnagar.github.io/</id>
   <author>
     <name><![CDATA[Sahir Rai Bhatnagar]]></name>
@@ -20,6 +20,9 @@
     <id>http://sahirbhatnagar.github.io/blog/2014/06/04/mathjax</id>
     <content type="html"><![CDATA[<p>testing mathjax <span class="math">\[
 F(\omega) = \int_{-\infty}^\infty f(t) e^{-i \omega t} \d t.
+\]</span></p>
+<p><span class="math">\[
+C_p (M)=\underbrace{\frac{SS_{res}(M)}{n}}_{\textrm{goodness of fit}} + \underbrace{\frac{2 \sigma^2 p_M}{n}}_{\textrm{complexity}} \normal
 \]</span></p>]]></content>
   </entry>
   
