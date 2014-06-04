@@ -12,6 +12,12 @@ SSC 2014 Case Study Competition
 
 This repository is set up for the data analysis that will done in `R`. 
 
+\begin{align}
+\mbox{$n$-way concatenation: } & A \cdot B = \{xy\mid x \in A, y \in B\} \\
+\mbox{Union: } & A\cup B = \{x\mid x \in A \text{ or } x \in B\} \\
+\mbox{$n$-way Kleene closure: } & A^* = \bigcup_{i=0}^{\infty} A^i
+\end{align}
+
 
 Data Sources
 -------------------
