@@ -1,0 +1,401 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>About-me - Sahir Bhatnagar</title>
+  <meta name="author" content="Sahir Rai Bhatnagar">
+
+  
+  <meta name="description" content="About-me Jun 3rd, 2014 SSC 2014 Case Study Competition This repository is set up for the data analysis that will done in R. Data Sources The data &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://sahirbhatnagar.github.io/about-me">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Sahir Bhatnagar" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Sahir Bhatnagar</a></h1>
+  
+    <h2>A PhD student in Statistical Genetics</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:sahirbhatnagar.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/about-me">About Me</a></li>
+  <li><a href="/publications">Publications</a></li>
+  <li><a href="/talks">Talks</a></li>
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article role="article">
+  
+  <header>
+    <h1 class="entry-title">About-me</h1>
+    <p class="meta">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-06-03T19:50:00-04:00" pubdate data-updated="true">Jun 3<span>rd</span>, 2014</time></p>
+  </header>
+  
+  <h2>SSC 2014 Case Study Competition</h2>
+
+<p>This repository is set up for the data analysis that will done in <code>R</code>.</p>
+
+<h2>Data Sources</h2>
+
+<p>The data come from the <a href="http://www.bls.gov/tus/datafiles_0312.htm">Bureau of Labor Statistics website</a>.</p>
+
+<p>The two (possibly more) data files that we are using are the:</p>
+
+<ul>
+<li><a href="http://www.bls.gov/tus/special.requests/atusresp_0312.zip">Respondent file</a></li>
+<li><a href="http://www.bls.gov/tus/special.requests/atussum_0312.zip">Activity Summary file</a></li>
+</ul>
+
+
+<h2>Documentation</h2>
+
+<ul>
+<li><a href="http://www.bls.gov/tus/atususersguide.pdf">User&rsquo;s Guide</a> has all the survey sampling methods, weighting justification, ect.</li>
+<li><a href="http://www.bls.gov/tus/freqvariables.pdf">Frequently Used Variables</a> has the codes of the most common variables found in the data</li>
+<li><a href="http://www.bls.gov/tus/lexiconnoex0312.pdf">Activity codes</a> is where we will find the time use activity codes of interest</li>
+</ul>
+
+
+<h2>Summary of meeting March 4th 2014 by Max</h2>
+
+<h3>Main questions</h3>
+
+<ul>
+<li><p>What effect does the economy have on the amount of time spent watching television and playing video games?</p>
+
+<ul>
+<li>Does this vary by gender?</li>
+<li>Does this vary according to labour force participation?</li>
+<li>Does this vary across income?</li>
+</ul>
+</li>
+<li><p>What are the strongest sociodemographic predictors of time spent watching television?</p></li>
+<li><strong>Exploratory question</strong>: What activities have been replaced by increased time spent on television and video games?</li>
+</ul>
+
+
+<h3>Challenges (discussion between Maxime and Sahir)</h3>
+
+<ul>
+<li>Should we include the weighting method in our regression model (perhaps through the likelihood)?</li>
+<li>How can we measure the variable &ldquo;economy&rdquo;?</li>
+<li>Look for seasonal trends (year to year)</li>
+<li>How can we measure the effect of economy?</li>
+<li>How do we want to handle categorical variables?</li>
+<li>Is missing data/imputation an issue?</li>
+<li>Are the ATUS modules introducing variables that are only available for just a few years (and thus unusable for the 10-year period)?</li>
+</ul>
+
+
+<h3>Possible solutions (meeting between Maxime, Sahir, Celia and Jiunping)</h3>
+
+<ul>
+<li>Look into Generalized Additive Models (GAMs)</li>
+<li>Can we get data on households that did not respond? If yes, can we use it to check if non-response is introducing bias?
+
+<ul>
+<li>Also, check if CPS or ATUS published data on non-response (e.g. which factors are likely to influence it).</li>
+</ul>
+</li>
+<li>For regularization techniques, does the weighting interact with the penalty term?</li>
+<li>Is the initiator of the activity the same as the respondent, and is this introducing bias?</li>
+<li><strong>Economy</strong>: stock indices, unemployment rate, GDP (look up if there are standard economic indices)
+
+<ul>
+<li>There is of course correlation between these indices. If we use multiple indices, we may want to use something like PCA to reduce correlation.</li>
+</ul>
+</li>
+</ul>
+
+
+<h2>Random thoughts March 6th 2014 by Celia</h2>
+
+<p>Let yi be the number of minutes of TV watching for person i, and let Xi be a (vector) covariate like education or income or employment, for person i.</p>
+
+<p>Assume yi = a(t) + b(t)Xi + ei. This allows the mean a to vary with time t and also the association with Xi to vary with time.</p>
+
+<p>Ideally, it would be nice to add structure to a(t) and b(t) (think hierarchical models). For example:
+a(t) = a0 + a1t + a2t<sup>2</sup> + a3E(t) + &hellip; + epsilon, where E(t) refers to an economic measure in year t. Given that the data span about 10 years there will be a limit on how many covariates can be included.</p>
+
+<p>Similarly, b(t) = b0 + b1t + b2t<sup>2</sup> + b3E(t) + &hellip; + epsilon.</p>
+
+<p>The question is how could this be estimated. It is a hierarchical model. Have you any experience with WINBUGS?
+* Gibbs sampling, Bayesian models.
+* Very flexible but challenging to get started
+* Might choke on data of this magnitude</p>
+
+<p>SAS should (might?) be capable with a careful study of something like Proc MIXED.</p>
+
+<h2>Room Bookings</h2>
+
+<ul>
+<li>HSSL &ndash; RM-19C, 1:00pm &ndash; 5:00pm Wednesday, March 19, 2014</li>
+<li>HSSL &ndash; RM-07F, 10:00am &ndash; 2:00pm Wednesday, March 26, 2014</li>
+<li>HSSL &ndash; M2-17B, 1:00pm &ndash; 5:00pm Wednesday, April 2, 2014</li>
+</ul>
+
+
+<h2>Meeting with Abbas March 12, 2014</h2>
+
+<ul>
+<li>Get started with multiple linear regression without weights. Start simple.</li>
+<li>Look into group LASSO for categorical variables, and varying coefficients</li>
+<li>Regularization techniques exist for varying coefficients</li>
+</ul>
+
+
+<h2>Meeting with Olli March 13, 2014</h2>
+
+<ul>
+<li>Weights are used to make your sample representative of the population. If you put in your model the factors which were used to compute the weights, then you are effectively correcting for the imbalances arising from the sampling (but note that the meaning of your coefficient for these variables changes &mdash; you basically have two contributions: the true influence at the population level, and the influence of the sampling mechanism). In other words, how to include the weights in the analysis depends on the question you are asking.</li>
+<li>The hierarchical structure added to the model to take into account the time-dependence can be fitted trough Gibbs sampling (cf. JAGS).</li>
+<li>The first important step is to write down a model, then discuss possible adjustments and decide how to fit it to the data.</li>
+<li>There is a lot of zero values for TV use; our analysis should address this problem.</li>
+</ul>
+
+
+<p>The model we came up with after this meeting is the following:</p>
+
+<p>Yi = a(ti) + bXi + epsilon i,</p>
+
+<p>where a(ti) = aE(ti) + espilon(ti).
+We are thus left with the following questions:
+* What kind of autoregressive structure do we want for a(ti), i.e. what is the distribution of the error term in year k given the error terms in previous years?
+* How do we want to handle the zero-inflated structure? FMR? Or two separate analyses?
+* How can we measure &ldquo;economy&rdquo;?
+* How do we do variable selection with this model?</p>
+
+<h2>Kevin&rsquo;s thoughts on economic variables March 16, 2014</h2>
+
+<ul>
+<li>Should use Real GDP rather than GDP as it adjusts for inflation.</li>
+<li>GDP data is available only quarterly while data for unemployment and stock indices are available monthly.  Initial thought is just to average over every three months to get quarterly estimates for unemployment and stock indices.  Any possible problems with this???</li>
+<li>Big 3 Stock indices in USA: Dow Jones Industrial Average, S&amp;P-500, and NASDAQ Composite.  First two seem fine as they&rsquo;re calculated based on US companies, however, third includes international companies and therefore was excluded from the analysis.</li>
+<li>For stock index data we should use the column AdjClose as it&rsquo;s adjusted for inflation.</li>
+</ul>
+
+
+<h2>Meeting March 19th (Max, Sy, KMAC)</h2>
+
+<p><a href="https://www-m4.ma.tum.de/fileadmin/w00bdb/www/czado/lec8.pdf">Gamma Regression Slides and Exploratory Analysis Examples</a></p>
+
+<p>We discussed the following plan
+* Work on EPI602 Assignment 4 to get more comfotable with JAGS, and keeping in mind our tentative hierarchical model
+* Do more exploratory analyses/plots
+* Think about hierarchical models more deeply. We should be able to explain why we use it</p>
+
+<h2>Meeting March 26th (Max, Sy, Kevisco)</h2>
+
+<p><a href="http://www.evolvedmicrobe.com/Literature/2009_Review%20of%20Bayesian%20Variable%20selection%20methods.pdf"><em>A review of Bayesian variable selection methods: What, How and Which</em></a>, by O&#8217;Hara and Sillanpaa (2009), with <a href="http://ba.stat.cmu.edu/journal/2009/vol04/issue01/ohara/supplement.html">code provided</a></p>
+
+<p><a href="http://www.stat.ufl.edu/archived/casella/Papers/Lasso.pdf"><em>The Bayesian Lasso</em></a>, Park and Casella (2008)</p>
+
+<p><a href="http://pages.stat.wisc.edu/~myuan/papers/lasso.final.pdf"><em>Efﬁcient Empirical Bayes Variable Selection and Estimation in Linear Models</em></a>, Yuan and Lin (2005)</p>
+
+<p>For next week:
+* Kmac: will work on PCA, naive analysis of tvtime use vs. economy, and put data of three columns for economy (2 PC&rsquo;s and time)
+* Max: look at income and race variable, missing data, and any other that might need to be included
+* Sy: Read papers on Bayesian variable selection</p>
+
+<h2>Data cleaning/Variable selection (2014/04/29)</h2>
+
+<ul>
+<li>The data cleaning process is now completed, and the list of the selected variables has been compiled. (Max)</li>
+<li>Update (May 1st, 2014): The &ldquo;cleaned&rdquo; data can be found in &ldquo;data.Rda&rdquo;.  There are also files called &ldquo;datagam.txt&rdquo; and &ldquo;datalog.txt&rdquo; which will be used for JAGS. (Kevin)</li>
+</ul>
+
+
+<h2>Regularization of the logistic model (2014/05/01)</h2>
+
+<ul>
+<li>The model has been fitted, 10-fold cross-validation (+ 1-sigma rule) has been used to tune the model. The current selected model includes five covariates: presence of household children (TRHHCHILD), age of respondent (TEAGE), sex of respondent (TESEX), usual number of hours worked in a week (TEHRUSLT), and whether the respondent has more than one job (TEMJOT).</li>
+<li>We might want to discuss some of details of the method and see if we agree on the basics.</li>
+</ul>
+
+
+<h2>Model discussion Sahir, Max, Kevin May 15th, 2014</h2>
+
+<ul>
+<li>Linear model to try (with appropriate link): alpha+diary_day+region+race+sex+hispanic+b1[QUARTER]*econ1+b2[QUARTER]*econ2+gamma[YEAR,MONTH]</li>
+</ul>
+
+
+  
+    <footer>
+      <p class="meta">
+        
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-06-03T19:50:00-04:00" pubdate data-updated="true">Jun 3<span>rd</span>, 2014</time>
+        
+      </p>
+      
+        <div class="sharing">
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+</div>
+
+      
+    </footer>
+  
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/06/03/my-first-post/">My First Post</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/sahirbhatnagar">@sahirbhatnagar</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'sahirbhatnagar',
+            count: 10,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+<section class="googleplus googleplus-hidden">
+  <h1>
+    <a href="https://plus.google.com/sahir.bhatnagar?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - Sahir Rai Bhatnagar -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+</body>
+</html>
