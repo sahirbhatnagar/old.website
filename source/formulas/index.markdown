@@ -1,0 +1,10 @@
+---
+layout: page
+title: "formulas"
+date: 2014-06-04 13:57
+comments: true
+sharing: true
+footer: true
+---
+
+*hello world*
