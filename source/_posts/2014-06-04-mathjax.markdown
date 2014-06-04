@@ -1,0 +1,12 @@
+---
+layout: post
+title: "mathjax"
+date: 2014-06-04 14:45:40 -0400
+comments: true
+categories: 
+---
+
+testing mathjax
+$$
+F(\omega) = \int_{-\infty}^\infty f(t) e^{-i \omega t} \d t.
+$$
