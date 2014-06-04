@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Hello | Sahir Bhatnagar]]></title>
   <link href="http://sahirbhatnagar.github.io/blog/categories/hello/atom.xml" rel="self"/>
   <link href="http://sahirbhatnagar.github.io/"/>
-  <updated>2014-06-04T14:04:53-04:00</updated>
+  <updated>2014-06-04T14:41:05-04:00</updated>
   <id>http://sahirbhatnagar.github.io/</id>
   <author>
     <name><![CDATA[Sahir Rai Bhatnagar]]></name>
@@ -18,25 +18,16 @@
     <link href="http://sahirbhatnagar.github.io/blog/2014/06/03/my-first-post/"/>
     <updated>2014-06-03T18:31:46-04:00</updated>
     <id>http://sahirbhatnagar.github.io/blog/2014/06/03/my-first-post</id>
-    <content type="html"><![CDATA[<h1>A First Level Header</h1>
-
-<h2>A Second Level Header</h2>
-
-<p>Now is the time for all good men to come to
-the aid of their country. This is just a
-regular paragraph.</p>
-
-<p>The quick brown fox jumped over the lazy
-dog&rsquo;s back.</p>
-
-<h3>Header 3</h3>
-
-<blockquote><p>This is a blockquote.</p>
-
+    <content type="html"><![CDATA[<h1 id="a-first-level-header">A First Level Header</h1>
+<h2 id="a-second-level-header">A Second Level Header</h2>
+<p>Now is the time for all good men to come to the aid of their country. This is just a regular paragraph.</p>
+<p>The quick brown fox jumped over the lazy dog’s back.</p>
+<h3 id="header-3">Header 3</h3>
+<blockquote>
+<p>This is a blockquote.</p>
 <p>This is the second paragraph in the blockquote.</p>
-
-<h2>This is an H2 in a blockquote</h2></blockquote>
-]]></content>
+<h2>This is an H2 in a blockquote</h2>
+</blockquote>]]></content>
   </entry>
   
 </feed>
