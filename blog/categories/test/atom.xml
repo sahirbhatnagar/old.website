@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Test | Sahir Rai Bhatnagar]]></title>
-  <link href="http://www.sahirbhatnagar.com/blog/categories/test/atom.xml" rel="self"/>
-  <link href="http://www.sahirbhatnagar.com/"/>
-  <updated>2014-06-05T12:48:22-04:00</updated>
-  <id>http://www.sahirbhatnagar.com/</id>
+  <link href="http://sahirbhatnagar.com/blog/categories/test/atom.xml" rel="self"/>
+  <link href="http://sahirbhatnagar.com/"/>
+  <updated>2014-06-05T13:05:31-04:00</updated>
+  <id>http://sahirbhatnagar.com/</id>
   <author>
     <name><![CDATA[Sahir Rai Bhatnagar]]></name>
     <email><![CDATA[sahir.bhatnagar@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[My First Post]]></title>
-    <link href="http://www.sahirbhatnagar.com/blog/2014/06/03/my-first-post/"/>
+    <link href="http://sahirbhatnagar.com/blog/2014/06/03/my-first-post/"/>
     <updated>2014-06-03T18:31:46-04:00</updated>
-    <id>http://www.sahirbhatnagar.com/blog/2014/06/03/my-first-post</id>
+    <id>http://sahirbhatnagar.com/blog/2014/06/03/my-first-post</id>
     <content type="html"><![CDATA[<h1 id="a-first-level-header">A First Level Header</h1>
 <h2 id="a-second-level-header">A Second Level Header</h2>
 <p>Now is the time for all good men to come to the aid of their country. This is just a regular paragraph.</p>

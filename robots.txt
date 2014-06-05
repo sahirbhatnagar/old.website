@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://www.sahirbhatnagar.com/sitemap.xml 
+Sitemap: http://sahirbhatnagar.com/sitemap.xml 
