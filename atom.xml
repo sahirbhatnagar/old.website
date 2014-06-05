@@ -4,7 +4,7 @@
   <title><![CDATA[Sahir Rai Bhatnagar]]></title>
   <link href="http://sahirbhatnagar.com/atom.xml" rel="self"/>
   <link href="http://sahirbhatnagar.com/"/>
-  <updated>2014-06-05T11:16:38-04:00</updated>
+  <updated>2014-06-05T11:39:11-04:00</updated>
   <id>http://sahirbhatnagar.com/</id>
   <author>
     <name><![CDATA[Sahir Rai Bhatnagar]]></name>
@@ -31,7 +31,7 @@ F(\omega) = \int_{-\infty}^\infty f(t) e^{-i \omega t} \d t.
 \]</span> <!-- more --> <span class="math">\[
 C_p (M)=\underbrace{\frac{SS_{res}(M)}{n}}_{\textrm{goodness of fit}} + \underbrace{\frac{2 \sigma^2 p_M}{n}}_{\textrm{complexity}} \normal
 \]</span></p>
-<p><img class="left" src="http://sahirbhatnagar.com/images/me.JPG"></p>]]></content>
+<p>Here are the <a href="https://github.com/sahirbhatnagar/talks/blob/master/coloretalcancer.pdf?raw=true">slides</a> for my talk on colorectal cancer.</p>]]></content>
   </entry>
   
   <entry>
