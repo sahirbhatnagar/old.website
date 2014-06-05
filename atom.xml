@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Sahir Rai Bhatnagar]]></title>
-  <link href="http://sahirbhatnagar.com/atom.xml" rel="self"/>
-  <link href="http://sahirbhatnagar.com/"/>
-  <updated>2014-06-05T12:40:16-04:00</updated>
-  <id>http://sahirbhatnagar.com/</id>
+  <link href="http://www.sahirbhatnagar.com/atom.xml" rel="self"/>
+  <link href="http://www.sahirbhatnagar.com/"/>
+  <updated>2014-06-05T12:48:22-04:00</updated>
+  <id>http://www.sahirbhatnagar.com/</id>
   <author>
     <name><![CDATA[Sahir Rai Bhatnagar]]></name>
     <email><![CDATA[sahir.bhatnagar@gmail.com]]></email>
@@ -15,17 +15,17 @@
   
   <entry>
     <title type="html"><![CDATA[The Title of the Post]]></title>
-    <link href="http://sahirbhatnagar.com/blog/2014/06/04/pic/"/>
+    <link href="http://www.sahirbhatnagar.com/blog/2014/06/04/pic/"/>
     <updated>2014-06-04T16:35:00-04:00</updated>
-    <id>http://sahirbhatnagar.com/blog/2014/06/04/pic</id>
+    <id>http://www.sahirbhatnagar.com/blog/2014/06/04/pic</id>
     <content type="html"><![CDATA[<p>This is what’s called the content. This text will be displayed underneath the photo in the photo post.</p>]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Mathjax]]></title>
-    <link href="http://sahirbhatnagar.com/blog/2014/06/04/mathjax/"/>
+    <link href="http://www.sahirbhatnagar.com/blog/2014/06/04/mathjax/"/>
     <updated>2014-06-04T14:45:40-04:00</updated>
-    <id>http://sahirbhatnagar.com/blog/2014/06/04/mathjax</id>
+    <id>http://www.sahirbhatnagar.com/blog/2014/06/04/mathjax</id>
     <content type="html"><![CDATA[<p>testing mathjax <span class="math">\[
 F(\omega) = \int_{-\infty}^\infty f(t) e^{-i \omega t} \d t.
 \]</span> <!-- more --> <span class="math">\[
@@ -36,9 +36,9 @@ C_p (M)=\underbrace{\frac{SS_{res}(M)}{n}}_{\textrm{goodness of fit}} + \underbr
   
   <entry>
     <title type="html"><![CDATA[My First Post]]></title>
-    <link href="http://sahirbhatnagar.com/blog/2014/06/03/my-first-post/"/>
+    <link href="http://www.sahirbhatnagar.com/blog/2014/06/03/my-first-post/"/>
     <updated>2014-06-03T18:31:46-04:00</updated>
-    <id>http://sahirbhatnagar.com/blog/2014/06/03/my-first-post</id>
+    <id>http://www.sahirbhatnagar.com/blog/2014/06/03/my-first-post</id>
     <content type="html"><![CDATA[<h1 id="a-first-level-header">A First Level Header</h1>
 <h2 id="a-second-level-header">A Second Level Header</h2>
 <p>Now is the time for all good men to come to the aid of their country. This is just a regular paragraph.</p>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Photos | Sahir Rai Bhatnagar]]></title>
-  <link href="http://sahirbhatnagar.com/blog/categories/photos/atom.xml" rel="self"/>
-  <link href="http://sahirbhatnagar.com/"/>
-  <updated>2014-06-05T12:40:16-04:00</updated>
-  <id>http://sahirbhatnagar.com/</id>
+  <link href="http://www.sahirbhatnagar.com/blog/categories/photos/atom.xml" rel="self"/>
+  <link href="http://www.sahirbhatnagar.com/"/>
+  <updated>2014-06-05T12:48:22-04:00</updated>
+  <id>http://www.sahirbhatnagar.com/</id>
   <author>
     <name><![CDATA[Sahir Rai Bhatnagar]]></name>
     <email><![CDATA[sahir.bhatnagar@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[The Title of the Post]]></title>
-    <link href="http://sahirbhatnagar.com/blog/2014/06/04/pic/"/>
+    <link href="http://www.sahirbhatnagar.com/blog/2014/06/04/pic/"/>
     <updated>2014-06-04T16:35:00-04:00</updated>
-    <id>http://sahirbhatnagar.com/blog/2014/06/04/pic</id>
+    <id>http://www.sahirbhatnagar.com/blog/2014/06/04/pic</id>
     <content type="html"><![CDATA[<p>This is what’s called the content. This text will be displayed underneath the photo in the photo post.</p>]]></content>
   </entry>
   
