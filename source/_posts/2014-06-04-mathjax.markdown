@@ -15,4 +15,4 @@ $$
 C_p (M)=\underbrace{\frac{SS_{res}(M)}{n}}_{\textrm{goodness of fit}} + \underbrace{\frac{2 \sigma^2 p_M}{n}}_{\textrm{complexity}} \normal
 $$
 
-{% img left /images/me.JPG %}
+Here are the [slides](https://github.com/sahirbhatnagar/talks/blob/master/coloretalcancer.pdf?raw=true) for my talk on colorectal cancer.
