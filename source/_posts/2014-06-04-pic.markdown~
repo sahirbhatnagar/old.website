@@ -16,10 +16,10 @@ tags:
 ## start of required tags
 
 # The URI of of the photo to be displayed in this post
-image: /images/me.JPG
+image: /images/habs.jpg
 
-photoWidth: 768       # width in pixels
-photoHeight: 511      # height in pixels
+photoWidth: 420       # width in pixels
+photoHeight: 220      # height in pixels
 
 ## end of required tags
 ##
