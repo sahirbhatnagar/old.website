@@ -1,0 +1,72 @@
+---
+layout: photo   # this tag directs Octopress to use your new layout
+
+title: "The Title of the Post"
+date: 2014-06-04 16:35
+comments: false
+categories:
+- Photos
+author: Your Name
+tags:
+- Tag 1
+- Tag 2
+
+#########################################
+##
+## start of required tags
+
+# The URI of of the photo to be displayed in this post
+image: /images/me.JPG
+
+photoWidth: 768       # width in pixels
+photoHeight: 511      # height in pixels
+
+## end of required tags
+##
+#########################################
+
+# The URI to a thumbnail image. This thumbnail
+# will be displayed on the index page.
+thumbnail: /images/me.JPG
+
+thumbnailWidth: 384   # width in pixels
+thumbnailHeight: 256  # height in pixels
+
+iso: 400              # ISO
+
+aperture: 4.8         # The aperture value 
+
+shutterSpeed: 0.4     # Shutter speed in seconds
+
+focalLength: 24.0 mm  # Focal length of the lens
+
+scaleFactor: 1.0      # Scale Factor to 35mm
+
+flash: No Flash       # Was the flash used here?
+
+expComp: N/A          # Exposure Compensation
+
+camera: Nikon D700    # Camera Model
+
+lens: AF-S VR Zoom-Nikkor 24-120mm f/3.5-5.6G IF-ED  # Lens 
+
+creator: Your Name    # Photographer Name
+
+# Date and Time the photograph was taken
+dateTaken: 2012/03/29 16:21:19
+
+# Copyright information
+copyright: Copyright 2012 Your Name
+
+# License information - This may be HTML
+license: <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png" /></a>
+
+# The URI to an image of the photo's histogram
+histogram: /images/photos/coolPhotoHist.jpg
+
+histogramWidth: 128   # width in pixels
+histogramHeight: 50   # height in pixels
+---
+
+This is what's called the content.  This text will
+be displayed underneath the photo in the photo post.
