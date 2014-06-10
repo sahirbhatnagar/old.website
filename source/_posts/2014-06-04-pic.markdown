@@ -27,7 +27,7 @@ photoHeight: 220      # height in pixels
 
 # The URI to a thumbnail image. This thumbnail
 # will be displayed on the index page.
-thumbnail: /images/me.JPG
+thumbnail: /images/habs.jpg
 
 thumbnailWidth: 384   # width in pixels
 thumbnailHeight: 256  # height in pixels
