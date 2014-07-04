@@ -3,7 +3,9 @@ layout: post
 title: "CDPATH in Bash"
 date: 2014-07-04 11:03:16 -0400
 comments: true
-categories: bash, shell, script
+sharing: true
+footer: true
+categories: [bash, shell, script]
 ---
 Instead of constantly typing the full path when using the `cd` command, **BASH** has a built-in feature called **CDPATH**. Credit goes to _lhunath_ who explained in this [SO Post](http://stackoverflow.com/questions/670488/how-to-manage-long-paths-in-bash) how to use this feature. 
 

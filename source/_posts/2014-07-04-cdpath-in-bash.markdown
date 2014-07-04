@@ -9,6 +9,8 @@ categories: [bash, shell, script]
 ---
 Instead of constantly typing the full path when using the `cd` command, **BASH** has a built-in feature called **CDPATH**. Credit goes to _lhunath_ who explained in this [SO Post](http://stackoverflow.com/questions/670488/how-to-manage-long-paths-in-bash) how to use this feature. 
 
+<!-- more -->
+
 The first time you do this, you need to create a hidden folder and add **CDPATH** to your bashrc (note this step only needs to be done once):
 
 ```
