@@ -101,7 +101,7 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
 
 
 <div class="entry-content"><p>Instead of constantly typing the full path when using the <code>cd</code> command, <strong>BASH</strong> has a built-in feature called <strong>CDPATH</strong>. Credit goes to <em>lhunath</em> who explained in this <a href="http://stackoverflow.com/questions/670488/how-to-manage-long-paths-in-bash">SO Post</a> how to use this feature.</p>
-The first time you do this, you need to create a hidden folder and add <strong>CDPATH</strong> to your bashrc (note this step only needs to be done once):
+<p>The first time you do this, you need to create a hidden folder and add <strong>CDPATH</strong> to your bashrc (note this step only needs to be done once):</p>
 <div class='bogus-wrapper'>
 <notextile>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -113,7 +113,7 @@ The first time you do this, you need to create a hidden folder and add <strong>C
 </notextile>
 </div>
 
-Then to add symbolic links use:
+<p>Then to add symbolic links use:</p>
 <div class='bogus-wrapper'>
 <notextile>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -124,11 +124,21 @@ Then to add symbolic links use:
 </div>
 
 
-To update your bashrc:
+<p>To update your bashrc:</p>
 <div class='bogus-wrapper'>
 <notextile>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$ source ~/.bashrc</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>source ~/.bashrc</span></code></pre></td></tr></table></div></figure>
+</notextile>
+</div>
+
+<p>Now you can enter the folders from anywhere by simply typing</p>
+<div class='bogus-wrapper'>
+<notextile>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd projects
+</span><span class='line'>cd backups</span></code></pre></td></tr></table></div></figure>
 </notextile>
 </div></div>
 
@@ -154,6 +164,12 @@ To update your bashrc:
 
 <time datetime="2014-07-04T11:03:16-04:00" pubdate data-updated="true">Jul 4<span>th</span>, 2014</time>
       
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/bash/'>bash,</a>, <a class='category' href='/blog/categories/script/'>script</a>, <a class='category' href='/blog/categories/shell/'>shell,</a>
+  
+</span>
 
 
     </p>
