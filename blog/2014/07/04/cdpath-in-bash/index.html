@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: Hello - Sahir Rai Bhatnagar</title>
+  <title>CDPATH in Bash - Sahir Rai Bhatnagar</title>
   <meta name="author" content="Sahir Rai Bhatnagar">
 
   
-  <meta name="description" content="Category: hello">
+  <meta name="description" content="Instead of constantly typing the full path when using the cd command, BASH has a built-in feature called CDPATH. Credit goes to lhunath who explained &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://www.sahirbhatnagar.comblog/categories/hello">
+  <link rel="canonical" href="http://www.sahirbhatnagar.com/blog/2014/07/04/cdpath-in-bash">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Sahir Rai Bhatnagar" type="application/atom+xml">
@@ -73,35 +73,107 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: Hello</h1>
+    
+      <h1 class="entry-title">CDPATH in Bash</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-07-04T11:03:16-04:00" pubdate data-updated="true">Jul 4<span>th</span>, 2014</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
-
-  
-  <h2>2014</h2>
-
-<article>
-  
-<h1><a href="/blog/2014/06/03/my-first-post/">My First Post</a></h1>
-<time datetime="2014-06-03T18:31:46-04:00" pubdate><span class='month'>Jun</span> <span class='day'>03</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/hello/'>hello</a>, <a class='category' href='/blog/categories/test/'>test</a>, <a class='category' href='/blog/categories/testing/'>testing</a>, <a class='category' href='/blog/categories/world/'>world</a></span>
-</footer>
-
-
-</article>
-
+<div class="entry-content"><p>Instead of constantly typing the full path when using the <code>cd</code> command, <strong>BASH</strong> has a built-in feature called <strong>CDPATH</strong>. Credit goes to <em>lhunath</em> who explained in this <a href="http://stackoverflow.com/questions/670488/how-to-manage-long-paths-in-bash">SO Post</a> how to use this feature.</p>
+The first time you do this, you need to create a hidden folder and add <strong>CDPATH</strong> to your bashrc (note this step only needs to be done once):
+<div class='bogus-wrapper'>
+<notextile>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>mkdir ~/.paths
+</span><span class='line'>cd ~/.paths
+</span><span class='line'>echo 'CDPATH=~/.paths' &gt;&gt; ~/.bashrc</span></code></pre></td></tr></table></div></figure>
+</notextile>
 </div>
 
+Then to add symbolic links use:
+<div class='bogus-wrapper'>
+<notextile>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ln -s /my/very/long/path/name/to/my/project project
+</span><span class='line'>ln -s /some/other/very/long/path/to/my/backups backups</span></code></pre></td></tr></table></div></figure>
+</notextile>
+</div>
+
+
+To update your bashrc:
+<div class='bogus-wrapper'>
+<notextile>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ source ~/.bashrc</span></code></pre></td></tr></table></div></figure>
+</notextile>
+</div></div>
+
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Sahir Rai Bhatnagar</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-07-04T11:03:16-04:00" pubdate data-updated="true">Jul 4<span>th</span>, 2014</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/06/04/pic/" title="Previous Post: Go Habs Go">&laquo; Go Habs Go</a>
+      
+      
+    </p>
+  </footer>
 </article>
 
 </div>
