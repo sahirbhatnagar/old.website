@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Script | Sahir Rai Bhatnagar]]></title>
   <link href="http://www.sahirbhatnagar.com/blog/categories/script/atom.xml" rel="self"/>
   <link href="http://www.sahirbhatnagar.com/"/>
-  <updated>2014-07-04T11:29:09-04:00</updated>
+  <updated>2014-07-04T11:40:59-04:00</updated>
   <id>http://www.sahirbhatnagar.com/</id>
   <author>
     <name><![CDATA[Sahir Rai Bhatnagar]]></name>
@@ -19,6 +19,8 @@
     <updated>2014-07-04T11:03:16-04:00</updated>
     <id>http://www.sahirbhatnagar.com/blog/2014/07/04/cdpath-in-bash</id>
     <content type="html"><![CDATA[<p>Instead of constantly typing the full path when using the <code>cd</code> command, <strong>BASH</strong> has a built-in feature called <strong>CDPATH</strong>. Credit goes to <em>lhunath</em> who explained in this <a href="http://stackoverflow.com/questions/670488/how-to-manage-long-paths-in-bash">SO Post</a> how to use this feature.</p>
+<!-- more -->
+
 <p>The first time you do this, you need to create a hidden folder and add <strong>CDPATH</strong> to your bashrc (note this step only needs to be done once):</p>
 <pre><code>mkdir ~/.paths
 cd ~/.paths
