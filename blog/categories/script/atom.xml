@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Script | Sahir Rai Bhatnagar]]></title>
   <link href="http://www.sahirbhatnagar.com/blog/categories/script/atom.xml" rel="self"/>
   <link href="http://www.sahirbhatnagar.com/"/>
-  <updated>2014-07-04T12:40:48-04:00</updated>
+  <updated>2014-07-04T12:53:26-04:00</updated>
   <id>http://www.sahirbhatnagar.com/</id>
   <author>
     <name><![CDATA[Sahir Rai Bhatnagar]]></name>
@@ -22,17 +22,17 @@
 <!-- more -->
 
 <p>The first time you do this, you need to create a hidden folder and add <strong>CDPATH</strong> to your bashrc (note this step only needs to be done once):</p>
-<pre><code>mkdir ~/.paths
-cd ~/.paths
-echo &#39;CDPATH=~/.paths&#39; &gt;&gt; ~/.bashrc</code></pre>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">mkdir</span> ~/.paths
+<span class="kw">cd</span> ~/.paths
+<span class="kw">echo</span> <span class="st">&#39;CDPATH=~/.paths&#39;</span> <span class="kw">&gt;&gt;</span> ~/.bashrc</code></pre>
 <p>Then to add symbolic links use:</p>
-<pre><code>ln -s /my/very/long/path/name/to/my/project project
-ln -s /some/other/very/long/path/to/my/backups backups</code></pre>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">ln</span> -s /my/very/long/path/name/to/my/project project
+<span class="kw">ln</span> -s /some/other/very/long/path/to/my/backups backups</code></pre>
 <p>To update your bashrc:</p>
-<pre><code>source ~/.bashrc</code></pre>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">source</span> ~/.bashrc</code></pre>
 <p>Now you can enter the folders from anywhere by simply typing</p>
-<pre><code>cd projects
-cd backups</code></pre>]]></content>
+<pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">cd</span> projects
+<span class="kw">cd</span> backups</code></pre>]]></content>
   </entry>
   
 </feed>

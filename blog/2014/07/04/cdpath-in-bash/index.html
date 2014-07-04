@@ -106,22 +106,28 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
 <p>The first time you do this, you need to create a hidden folder and add <strong>CDPATH</strong> to your bashrc (note this step only needs to be done once):</p>
 <div class='bogus-wrapper'>
 <notextile>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><figcaption>
+<span></span>
+</figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>mkdir ~/.paths
-</span><span class='line'>cd ~/.paths
-</span><span class='line'>echo 'CDPATH=~/.paths' &gt;&gt; ~/.bashrc</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>mkdir ~/.paths
+</span><span class='line'><span class="nb">cd</span> ~/.paths
+</span><span class='line'><span class="nb">echo</span> <span class="s1">&#39;CDPATH=~/.paths&#39;</span> &gt;&gt; ~/.bashrc
+</span></code></pre></td></tr></table></div></figure>
 </notextile>
 </div>
 
 <p>Then to add symbolic links use:</p>
 <div class='bogus-wrapper'>
 <notextile>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><figcaption>
+<span></span>
+</figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>ln -s /my/very/long/path/name/to/my/project project
-</span><span class='line'>ln -s /some/other/very/long/path/to/my/backups backups</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>ln -s /my/very/long/path/name/to/my/project project
+</span><span class='line'>ln -s /some/other/very/long/path/to/my/backups backups
+</span></code></pre></td></tr></table></div></figure>
 </notextile>
 </div>
 
@@ -129,18 +135,24 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
 <p>To update your bashrc:</p>
 <div class='bogus-wrapper'>
 <notextile>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>source ~/.bashrc</span></code></pre></td></tr></table></div></figure>
+<figure class='code'><figcaption>
+<span></span>
+</figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">source</span> ~/.bashrc
+</span></code></pre></td></tr></table></div></figure>
 </notextile>
 </div>
 
 <p>Now you can enter the folders from anywhere by simply typing</p>
 <div class='bogus-wrapper'>
 <notextile>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><figcaption>
+<span></span>
+</figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>cd projects
-</span><span class='line'>cd backups</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">cd </span>projects
+</span><span class='line'><span class="nb">cd </span>backups
+</span></code></pre></td></tr></table></div></figure>
 </notextile>
 </div></div>
 
