@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Linux | Sahir Rai Bhatnagar]]></title>
+  <link href="http://www.sahirbhatnagar.com/blog/categories/linux/atom.xml" rel="self"/>
+  <link href="http://www.sahirbhatnagar.com/"/>
+  <updated>2014-07-21T16:27:03-04:00</updated>
+  <id>http://www.sahirbhatnagar.com/</id>
+  <author>
+    <name><![CDATA[Sahir Rai Bhatnagar]]></name>
+    <email><![CDATA[sahir.bhatnagar@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Linux: Thunderbird and McGill Mail]]></title>
+    <link href="http://www.sahirbhatnagar.com/blog/2014/07/21/linux-thunderbird-and-mcgill-mail/"/>
+    <updated>2014-07-21T15:59:58-04:00</updated>
+    <id>http://www.sahirbhatnagar.com/blog/2014/07/21/linux-thunderbird-and-mcgill-mail</id>
+    <content type="html"><![CDATA[<p>The Microsoft Outlook web app is terrible for Linux. Simple tasks such as saving addresses or deleting messages by filter is painfully difficult, especially when you have had experience with good email clients on Windows, or even Mac OS. I always knew Thunderbird existed for Linux, but didn’t know my university’s specific settings. <!-- more --></p>
+<p>Thanks to <a href="http://www.reddit.com/user/FandagoDingo">FandagoDingo</a> for this post. Though the images below are for a Windows based email client, the settings are identical for Linux Thunderbird. When you first startup Thunderbird and setup a new account, you will see these options automatically. You just need to adjust the setting shown below. These settings are for <a href="http://www.mcgill.ca/">McGill Univeristy</a></p>
+<p><img src="/images/ingoing.jpg" title="[ingoing]" ></p>
+<p><img src="/images/outgoing.jpg" title="[outgoing]" ></p>]]></content>
+  </entry>
+  
+</feed>
