@@ -8,7 +8,7 @@ categories: [Europe, Paris, Travel]
 
 Our Europe 2014 trip plan:
 
-{% img /images/europe2014/paris/it.png [CDG] %}
+{% img /images/europe2014/paris/map.png [CDG] %}
 
 <!-- more -->
 
