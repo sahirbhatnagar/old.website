@@ -4,7 +4,7 @@
   <title><![CDATA[Sahir Rai Bhatnagar]]></title>
   <link href="http://www.sahirbhatnagar.com/atom.xml" rel="self"/>
   <link href="http://www.sahirbhatnagar.com/"/>
-  <updated>2014-07-31T11:54:09-04:00</updated>
+  <updated>2014-08-16T10:01:02-04:00</updated>
   <id>http://www.sahirbhatnagar.com/</id>
   <author>
     <name><![CDATA[Sahir Rai Bhatnagar]]></name>
@@ -33,7 +33,7 @@
 <!-- more -->
 
 <p>The first time you do this, you need to create a hidden folder and add <strong>CDPATH</strong> to your bashrc (note this step only needs to be done once):</p>
-<div class='bogus-wrapper'>
+<div class="bogus-wrapper">
 <notextile>
 <figure class='code'><figcaption>
 <span></span>
@@ -46,9 +46,8 @@
 </span></code></pre></td></tr></table></div></figure>
 </notextile>
 </div>
-
 <p>Then to add symbolic links use:</p>
-<div class='bogus-wrapper'>
+<div class="bogus-wrapper">
 <notextile>
 <figure class='code'><figcaption>
 <span></span>
@@ -59,10 +58,8 @@
 </span></code></pre></td></tr></table></div></figure>
 </notextile>
 </div>
-
-
 <p>To update your bashrc:</p>
-<div class='bogus-wrapper'>
+<div class="bogus-wrapper">
 <notextile>
 <figure class='code'><figcaption>
 <span></span>
@@ -71,9 +68,8 @@
 </span></code></pre></td></tr></table></div></figure>
 </notextile>
 </div>
-
 <p>Now you can enter the folders from anywhere by simply typing</p>
-<div class='bogus-wrapper'>
+<div class="bogus-wrapper">
 <notextile>
 <figure class='code'><figcaption>
 <span></span>
