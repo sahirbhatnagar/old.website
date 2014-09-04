@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Paris | Sahir Rai Bhatnagar]]></title>
   <link href="http://www.sahirbhatnagar.com/blog/categories/paris/atom.xml" rel="self"/>
   <link href="http://www.sahirbhatnagar.com/"/>
-  <updated>2014-09-04T13:21:57-04:00</updated>
+  <updated>2014-09-04T14:59:04-04:00</updated>
   <id>http://www.sahirbhatnagar.com/</id>
   <author>
     <name><![CDATA[Sahir Rai Bhatnagar]]></name>
@@ -35,19 +35,19 @@
     <updated>2014-08-16T10:03:52-04:00</updated>
     <id>http://www.sahirbhatnagar.com/blog/2014/08/16/travelling-to-paris</id>
     <content type="html"><![CDATA[<p>Our Europe 2014 trip plan:</p>
-<p><img src="/images/europe2014/paris/map.png" title="[CDG]" ></p>
+<p>{% img /images/europe2014/paris/map.png [CDG] %}</p>
 <!-- more -->
 
 <p>We took the evening flight from Montreal Trudeau (YUL) to Paris Charles de Gaulle (CDG).</p>
-<p><img src="/images/europe2014/paris/IMG_6384.JPG" title="[CDG]" ></p>
+<p>{% img /images/europe2014/paris/IMG_6384.JPG [CDG] %}</p>
 <p>Here’s the <em>before</em> picutre:</p>
-<p><img src="/images/europe2014/paris/IMG_6379.JPG" title="[CDG]" ></p>
+<p>{% img /images/europe2014/paris/IMG_6379.JPG [CDG] %}</p>
 <p>I tried to sleep as little as possible in the nights leading up to the flight to try and counteract the jet-lag but it didn’t work. We had trouble sleeping in the plane so we watched Hunger Games: Catching Fire…twice. It’s actually a pretty interesting movie; a comic book which depicts human nature in the face of opression. The plane food was terrible as expected. Note to self: ask for the Hindu option next time.</p>
-<p><img src="/images/europe2014/paris/IMG_6386.JPG" title="[CDG]" ></p>
+<p>{% img /images/europe2014/paris/IMG_6386.JPG [CDG] %}</p>
 <p>We landed in Paris on August 13th at 6 am, and took the <a href="http://www.aeroportsdeparis.fr/ADP/en-GB/Passagers/Access-maps-car-parks/Paris-CDG/Access/public-transport/paris-cdg-roissybus.htm">RoissyBus</a> from Terminal 3 to Opera metro.</p>
-<p><img src="/images/europe2014/paris/IMG_6388.JPG" title="[CDG]" ></p>
+<p>{% img /images/europe2014/paris/IMG_6388.JPG [CDG] %}</p>
 <p>This was a nice bus ride, and allowed you to see the <strong>normal</strong> part of Paris: Peugeot cars, highways, people going to work in the morning, apartments, factories. It’s a nice dose of reality and reminds you that Paris is more than just huge monuments, overpriced shopping and a tourist mayhem. Here’s a picture of Karen thouroughly enjoying the RoissyBus.</p>
-<p><img src="/images/europe2014/paris/IMG_6389.JPG" title="[CDG]" ></p>]]></content>
+<p>{% img /images/europe2014/paris/IMG_6389.JPG [CDG] %}</p>]]></content>
   </entry>
   
 </feed>
