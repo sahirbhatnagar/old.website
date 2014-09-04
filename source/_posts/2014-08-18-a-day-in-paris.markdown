@@ -8,6 +8,8 @@ categories: [Paris, Travel, Europe]
 
 We started the day with a walking tour with [Culture Fish](www.culturefishtours.com). It's a relatively new company started by three American siblings who have a French mother. Like most of its kind, the tour is free though tipping is expected. They offer two tours: main events which started at La Cite metro and monmarte, we took the former. 
 
+<!-- more -->
+
 It was a good intro to Paris tour covering the main attractions such as Notre Dame Basilica, Louvre, Tour Eiffel, La Seine, le pont des amoureux, l'Hotel de Ville. Our guide Pierre gave a very nice clear overview of the different time periods in Parisian history and the different peoples that occupied it. 
 
 A unique feature of this tour, and the story behind the company's name, was the stories about culture clashes, i.e., when people from around the world intereact with the locals. For example, Parisians keep their voices down and see screaming or yelling as a sign of disrespect while in other cultures, like Indians or Italians, speaking loudly is the norm. They also expect you to greet them by saying _Bonjour Monsieur_ or _Bonjour Madame_. Locals also love to relax; something us North Americans might not be accustomed to doing. Life is alot slower here according to Pierre. He told us when he was trying to get some promotional items for his company, it took him forever to find anyone with a website (which is unheared of nowadays in Canada and the US). He said things are done more by word of mouth.
