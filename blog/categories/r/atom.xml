@@ -4,7 +4,7 @@
   <title><![CDATA[Category: R | Sahir Rai Bhatnagar]]></title>
   <link href="http://www.sahirbhatnagar.com/blog/categories/r/atom.xml" rel="self"/>
   <link href="http://www.sahirbhatnagar.com/"/>
-  <updated>2014-09-04T15:16:39-04:00</updated>
+  <updated>2014-09-04T15:21:38-04:00</updated>
   <id>http://www.sahirbhatnagar.com/</id>
   <author>
     <name><![CDATA[Sahir Rai Bhatnagar]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Testing Rmd]]></title>
     <link href="http://www.sahirbhatnagar.com/blog/2014/09/04/testing-rmd/"/>
-    <updated>2014-09-04T14:37:00-04:00</updated>
+    <updated>2014-09-04T14:37:33-04:00</updated>
     <id>http://www.sahirbhatnagar.com/blog/2014/09/04/testing-rmd</id>
     <content type="html"><![CDATA[<pre><code>## Error: Invalid name specified, see ?BibOptions</code></pre>
 <p>It has been quiet the last months here - main reason is that I’m working on my master’s thesis. I have already prepared some more examples from ‘Quantitative Ecotoxicolgy’, but I didn’t come to publish them here.</p>
