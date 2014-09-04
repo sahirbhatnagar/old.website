@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "testing Rmd"
-date: 2014-09-04 14:37
+date: 2014-09-04 14:37:33 -0400
 comments: true
 categories: [R, Rmarkdown]
 ---

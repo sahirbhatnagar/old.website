@@ -4,7 +4,7 @@ title: "Rovigno"
 date: 2014-08-20 19:15:33 -0400
 comments: true
 categories: [Travel, Europe, Rovigno, Croatia]
-published: false
+published: true
 ---
 
 I am writing this post on our 4.5 hour train ride to Salzburgh from Ljubjlana. It's tough to keep up with my blog when you're so worn out from travelling, walking, eating and drinking. One advantage though is that you get to compare similarities and differences between cities. You start to notice the smaller things like automatic lighting in bathrooms and charging for water at restaurants. 
