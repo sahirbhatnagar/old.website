@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Regression | Linkage Disequilibrium]]></title>
+  <link href="http://www.sahirbhatnagar.com/blog/categories/regression/atom.xml" rel="self"/>
+  <link href="http://www.sahirbhatnagar.com/"/>
+  <updated>2014-11-15T23:39:44-05:00</updated>
+  <id>http://www.sahirbhatnagar.com/</id>
+  <author>
+    <name><![CDATA[Sahir Rai Bhatnagar]]></name>
+    <email><![CDATA[sahir.bhatnagar@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Gradient Descent]]></title>
+    <link href="http://www.sahirbhatnagar.com/blog/2014/11/15/gradientdescent/"/>
+    <updated>2014-11-15T23:16:00-05:00</updated>
+    <id>http://www.sahirbhatnagar.com/blog/2014/11/15/gradientdescent</id>
+    <content type="html"><![CDATA[<p>I am taking the Machine Learning course on <a href="https://class.coursera.org/ml-007/lecture">Coursera</a> being taught by Andrew Ng. It is turning out to be useful so far, and he has presented the material clearly. It’s a nice introduction to the Machine Learning/Computer Science language, since I come from a statistics background.</p>
+<p>I learned about gradient descent today for simple linear regression. The following is my code in R and I compare it to the <em>lm</em> function in base <em>R</em>.</p>
+<p>I am using the <strong>Prostate</strong> dataset from the <em>lasso2</em> package. The model I am fitting is:</p>
+<p><span class="math">\[ lpsa = \beta_0 + \beta_1 \times lcavol \]</span></p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co">#prostate cancer data set</span>
+<span class="kw">library</span>(lasso2)</code></pre>
+<pre><code>## R Package to solve regression problems while imposing
+##   an L1 constraint on the parameters. Based on S-plus Release 2.1
+## Copyright (C) 1998, 1999
+## Justin Lokhorst   &lt;jlokhors@stats.adelaide.edu.au&gt;
+## Berwin A. Turlach &lt;bturlach@stats.adelaide.edu.au&gt;
+## Bill Venables     &lt;wvenable@stats.adelaide.edu.au&gt;
+## 
+## Copyright (C) 2002
+## Martin Maechler &lt;maechler@stat.math.ethz.ch&gt;</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">data</span>(Prostate)
+
+<span class="co"># hypothesis</span>
+hypothesis &lt;-<span class="st"> </span>function(x, theta0,theta1){
+    h &lt;-<span class="st"> </span>theta0 +<span class="st"> </span>theta1*x
+    <span class="kw">return</span>(h)
+}
+
+<span class="co"># Jacobian</span>
+deriv &lt;-<span class="st"> </span>function(x,y,theta0,theta1){
+    dt0 &lt;-<span class="st"> </span>(<span class="kw">length</span>(x))^(-<span class="dv">1</span>)*<span class="st"> </span><span class="kw">sum</span>((<span class="kw">hypothesis</span>(x,theta0,theta1)-y))
+    dt1 &lt;-<span class="st"> </span>(<span class="kw">length</span>(x))^(-<span class="dv">1</span>)*<span class="st"> </span><span class="kw">t</span>(x) %*%<span class="st"> </span>(<span class="kw">hypothesis</span>(x,theta0,theta1)-y)
+    <span class="kw">return</span>(<span class="kw">c</span>(dt0,dt1))
+}
+
+theta &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">0</span>)
+alpha &lt;-<span class="st"> </span><span class="fl">0.5</span>
+X &lt;-<span class="st"> </span>Prostate$lcavol
+Y &lt;-<span class="st"> </span>Prostate$lpsa
+i=<span class="dv">1</span>
+<span class="co">#</span>
+theta.star &lt;-<span class="st"> </span><span class="kw">deriv</span>(Prostate$lcavol,Prostate$lpsa,theta[<span class="dv">1</span>],theta[<span class="dv">2</span>])
+<span class="co"># set convergence threshold</span>
+threshold &lt;-<span class="st"> </span><span class="fl">1e-7</span>
+<span class="co"># logical to check if threshold has been achieved</span>
+continue=<span class="ot">TRUE</span>
+
+while (continue){
+    theta[<span class="dv">1</span>] &lt;-<span class="st"> </span>theta.star[<span class="dv">1</span>] -<span class="st"> </span>alpha*<span class="kw">deriv</span>(<span class="dt">x=</span>X,<span class="dt">y=</span>Y,theta.star[<span class="dv">1</span>],theta.star[<span class="dv">2</span>])[<span class="dv">1</span>]
+    theta[<span class="dv">2</span>] &lt;-<span class="st"> </span>theta.star[<span class="dv">2</span>] -<span class="st"> </span>alpha*<span class="kw">deriv</span>(<span class="dt">x=</span>X,<span class="dt">y=</span>Y,theta.star[<span class="dv">1</span>],theta.star[<span class="dv">2</span>])[<span class="dv">2</span>]
+    continue &lt;-<span class="st"> </span>(<span class="kw">abs</span>((theta.star-theta)[<span class="dv">1</span>])&gt;threshold &amp;<span class="st"> </span><span class="kw">abs</span>((theta.star-theta)[<span class="dv">2</span>])&gt;threshold)
+    theta.star[<span class="dv">1</span>] &lt;-<span class="st"> </span>theta[<span class="dv">1</span>]
+    theta.star[<span class="dv">2</span>] &lt;-<span class="st"> </span>theta[<span class="dv">2</span>]
+    i=i<span class="dv">+1</span>
+}
+
+<span class="co"># number of iterations</span>
+i</code></pre>
+<pre><code>## [1] 214</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># beta0 and beta1</span>
+theta.star</code></pre>
+<pre><code>## [1] 1.5073 0.7193</code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># compare to lm</span>
+fit &lt;-<span class="st"> </span><span class="kw">lm</span>(lpsa~lcavol, <span class="dt">data=</span>Prostate)
+<span class="kw">summary</span>(fit)</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = lpsa ~ lcavol, data = Prostate)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -1.6762 -0.4165  0.0986  0.5071  1.8967 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)   1.5073     0.1219    12.4   &lt;2e-16 ***
+## lcavol        0.7193     0.0682    10.6   &lt;2e-16 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 0.787 on 95 degrees of freedom
+## Multiple R-squared:  0.539,  Adjusted R-squared:  0.535 
+## F-statistic:  111 on 1 and 95 DF,  p-value: &lt;2e-16</code></pre>]]></content>
+  </entry>
+  
+</feed>

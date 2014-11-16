@@ -5,11 +5,24 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: McGill - Linkage Disequilibrium</title>
+  <title>Test Rmd - Linkage Disequilibrium</title>
   <meta name="author" content="Sahir Rai Bhatnagar">
 
   
-  <meta name="description" content="Category: McGill">
+  <meta name="description" content="Methods
+Transmission Disequilibrium Test  
+A non transmitted
+B non transmitted
+Total A transmitted
+a
+b
+a+b B transmitted
+c
+d
+c+d Total
+a+c
+b+d
+2n [ ^ &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +31,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://www.sahirbhatnagar.comblog/categories/mcgill">
+  <link rel="canonical" href="http://www.sahirbhatnagar.com/blog/2014/09/05/test-rmd">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Linkage Disequilibrium" type="application/atom+xml">
@@ -75,36 +88,269 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: McGill</h1>
+    
+      <h1 class="entry-title">Test Rmd</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-09-05T21:45:00-04:00" pubdate data-updated="true">Sep 5<span>th</span>, 2014</time>
+        
+           | <a href="#disqus_thread"
+             data-disqus-identifier="http://www.sahirbhatnagar.com">Comments</a>
+        
+      </p>
     
   </header>
+
+
+<div class="entry-content"><h1 id="methods">Methods</h1>
+<h2 id="transmission-disequilibrium-test">Transmission Disequilibrium Test</h2>
+<table>
+<col style="width: 27%" /><col style="width: 29%" /><col style="width: 29%" /><col style="width: 11%" /><thead>
+<tr class="header">
+<th style="text-align: center;"> </th>
+<th style="text-align: center;">A non transmitted</th>
+<th style="text-align: center;">B non transmitted</th>
+<th style="text-align: left;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">A transmitted</td>
+<td style="text-align: center;">a</td>
+<td style="text-align: center;">b</td>
+<td style="text-align: left;">a+b</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">B transmitted</td>
+<td style="text-align: center;">c</td>
+<td style="text-align: center;">d</td>
+<td style="text-align: left;">c+d</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Total</td>
+<td style="text-align: center;">a+c</td>
+<td style="text-align: center;">b+d</td>
+<td style="text-align: left;">2n</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<ul>
+<li>[ ^2_{(TDT)} =  ^2_{(1)} ]</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>This is also known as a McNemar Test</li>
+</ul>
+</blockquote>
+<h2 id="pedigree-disequilibrium-test-pdt-informative-trios">Pedigree Disequilibrium Test (PDT) | Informative Trios</h2>
+<p><img src="../figure/2014-09-05-test-rmd-unnamed-chunk-1.png" title="plot of chunk unnamed-chunk-1" alt="plot of chunk unnamed-chunk-1" style="display: block; margin: auto;" /></p>
+<h2 id="pedigree-disequilibrium-test-pdt-informative-discordant-sibships">Pedigree Disequilibrium Test (PDT) | Informative Discordant Sibships</h2>
+<p><img src="../figure/2014-09-05-test-rmd-unnamed-chunk-2.png" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" style="display: block; margin: auto;" /></p>
+<h2 id="pedigree-disequilibrium-test-pdt">Pedigree Disequilibrium Test (PDT)</h2>
+<p>Within an informative nuclear family define:</p>
+<ul>
+<li><span class="math">\(X_T\)</span> = (#<span class="math">\(A\)</span> transmitted) - (#<span class="math">\(A\)</span> not transmitted) <span class="math">\(\rightarrow\)</span> <span class="math">\(n_T\)</span> <em>trios</em></li>
+<li><span class="math">\(X_S\)</span> = (#<span class="math">\(A\)</span> affected sib) - (#<span class="math">\(A\)</span> unaffected sib) <span class="math">\(\rightarrow\)</span> <span class="math">\(n_s\)</span> <em>sibships</em></li>
+</ul>
+<p>[D= ( X_{T} + X_{S} ) ]</p>
+<p>For <span class="math">\(k=1,\ldots,N\)</span> unrelated informative pedigrees</p>
+<p>[ PDT_{test} =  (0,1) ]</p>
+<h2 id="family-based-association-test-fbat">Family Based Association Test (FBAT)</h2>
+<div class="red2">
+A unified approach to family based tests of association that can handle:
+</div>
+<ol type="1">
+<li>Different genetic models</li>
+<li>Sampling designs</li>
+<li>Multiallelic markers</li>
+<li>Quantitative traits</li>
+<li>Missing parental genotype information</li>
+</ol>
+<h2 id="family-based-association-test-fbat-1">Family Based Association Test (FBAT)</h2>
+<blockquote>
+<ul>
+<li>The FBAT statistic is based on the <strong>covariance</strong> between genotype and phenotype</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>What is covariance ?</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>A measure of how much two random variables change together
+<ul>
+<li><span class="math">\(R^2\)</span> is normalized version of the covariance</li>
+</ul></li>
+</ul>
+</blockquote>
+<h2 id="family-based-association-test-fbat-test-statistic">Family Based Association Test (FBAT) | Test Statistic</h2>
+<p>[ U = T^*  ] [ FBAT =  ^2_{(1)}  ]</p>
+<ul>
+<li><span class="math">\(X\)</span>: translates offspring’s genotype to a numeric value e.g. count of A alleles (random)</li>
+<li><span class="math">\(P\)</span>: genotype of offspring’s parents (fixed)</li>
+<li><span class="math">\(T\)</span>: offspring’s trait (fixed)</li>
+<li>summation is over all offspring in the sample</li>
+</ul>
+<h2 id="family-based-association-test-fbat-why-so-flexible">Family Based Association Test (FBAT) | Why so flexible ?</h2>
+<blockquote>
+<ul>
+<li>Of interest is the offspring’s genotype
+<ul>
+<li>Missing parental genotypes are <em>nuisance</em> parameters</li>
+</ul></li>
+<li>Standard approach to handling <em>nuisance</em> parameters:
+<ul>
+<li>Find sufficient statistics for them</li>
+<li>Condition on the sufficient statistics</li>
+<li>Conditional distribution does not depend on <em>nuisance</em> parameters</li>
+</ul></li>
+</ul>
+</blockquote>
+<h2 id="comparison-of-methods" class="smaller">Comparison of Methods</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">attribute</th>
+<th style="text-align: center;">TDT</th>
+<th style="text-align: center;">PDT</th>
+<th style="text-align: center;">FBAT</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">affected child</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">1 heterozygous parent</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">biallelic markers</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">trios</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">missing parental genotypes</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">discordant sibships</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">pedigrees</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">multiallelic markers</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">✓</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">quantitative Traits</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">✓</td>
+</tr>
+</tbody>
+</table></div>
+
+
+  <footer>
+    <p class="meta">
+      
   
-  <div id="blog-archives" class="category">
+
+<span class="byline author vcard">Posted by <span class="fn">Sahir Rai Bhatnagar</span></span>
+
+      
+
+
+
+
+
 
 
 
   
-  <h2>2014</h2>
 
-<article>
+
+<time datetime="2014-09-05T21:45:00-04:00" pubdate data-updated="true">Sep 5<span>th</span>, 2014</time>
+      
+
+<span class="categories">
   
-<h1><a href="/blog/2014/07/21/linux-thunderbird-and-mcgill-mail/">Linux: Thunderbird and McGill Mail</a></h1>
-<time datetime="2014-07-21T15:59:58-04:00" pubdate><span class='month'>Jul</span> <span class='day'>21</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/linux/'>Linux</a>, <a class='category' href='/blog/categories/mcgill/'>McGill</a></span>
-</footer>
+    <a class='category' href='/blog/categories/r/'>R</a>, <a class='category' href='/blog/categories/rmarkdown/'>RMarkdown</a>
+  
+</span>
 
 
-</article>
-
+    </p>
+    
+      <div class="sharing">
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
 </div>
 
-  
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/09/04/testing-rmd/" title="Previous Post: testing Rmd">&laquo; testing Rmd</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2014/11/15/gradientdescent/" title="Next Post: Gradient Descent">Gradient Descent &raquo;</a>
+      
+    </p>
+  </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -224,7 +470,10 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
       var disqus_shortname = 'sahirbhatnagar';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://www.sahirbhatnagar.com/blog/2014/09/05/test-rmd/';
+        var disqus_url = 'http://www.sahirbhatnagar.com/blog/2014/09/05/test-rmd/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

@@ -5,11 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>CDPATH in Bash - Linkage Disequilibrium</title>
+  <title>Testing Rmd - Linkage Disequilibrium</title>
   <meta name="author" content="Sahir Rai Bhatnagar">
 
   
-  <meta name="description" content="Instead of constantly typing the full path when using the cd command, BASH has a built-in feature called CDPATH. Credit goes to lhunath who explained &hellip;">
+  <meta name="description" content="1
+## Error: Invalid name specified, see ?BibOptions It has been quiet the last months here - main reason is that I’m working on my master’s thesis. &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://www.sahirbhatnagar.com/blog/2014/07/04/cdpath-in-bash">
+  <link rel="canonical" href="http://www.sahirbhatnagar.com/blog/2014/09/04/testing-rmd">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Linkage Disequilibrium" type="application/atom+xml">
@@ -79,7 +80,7 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
   
   <header>
     
-      <h1 class="entry-title">CDPATH in Bash</h1>
+      <h1 class="entry-title">Testing Rmd</h1>
     
     
       <p class="meta">
@@ -95,7 +96,7 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
   
 
 
-<time datetime="2014-07-04T11:03:16-04:00" pubdate data-updated="true">Jul 4<span>th</span>, 2014</time>
+<time datetime="2014-09-04T14:37:00-04:00" pubdate data-updated="true">Sep 4<span>th</span>, 2014</time>
         
            | <a href="#disqus_thread"
              data-disqus-identifier="http://www.sahirbhatnagar.com">Comments</a>
@@ -105,10 +106,26 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
   </header>
 
 
-<div class="entry-content"><p>Instead of constantly typing the full path when using the <code>cd</code> command, <strong>BASH</strong> has a built-in feature called <strong>CDPATH</strong>. Credit goes to <em>lhunath</em> who explained in this <a href="http://stackoverflow.com/questions/670488/how-to-manage-long-paths-in-bash">SO Post</a> how to use this feature.</p>
-<!-- more -->
-
-<p>The first time you do this, you need to create a hidden folder and add <strong>CDPATH</strong> to your bashrc (note this step only needs to be done once):</p>
+<div class="entry-content"><div class="bogus-wrapper">
+<notextile>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>## Error: Invalid name specified, see ?BibOptions</span></code></pre></td></tr></table></div></figure>
+</notextile>
+</div>
+<p>It has been quiet the last months here - main reason is that I’m working on my master’s thesis. I have already prepared some more examples from ‘Quantitative Ecotoxicolgy’, but I didn’t come to publish them here.</p>
+<p>This post is about collinearity and the implications for linear models. The best way to explore this is by simulations - where I create data with known properties and look what happens.</p>
+<h3 id="create-correlated-random-variables">Create correlated random variables</h3>
+<p>The first problem for this simulation was: How can we create correlated random variables?</p>
+<p>This simulation is similar to the one in, where it is also mentioned that one could use Cholesky Decompostion to create correlated variables:</p>
+<p>What this function function does:</p>
+<ul>
+<li>Create two normal random variables (X1, X2 ~ N(0, 1))</li>
+<li>Create desired correlation matrix</li>
+<li>Compute the Choleski factorization of the correlation matrix ( R )</li>
+<li>Apply the resulting matrix on the two variables (this rotates, shears and scales the variables so that they are correlated)</li>
+<li>Create a dependent variable <code>y</code> after the model:</li>
+</ul>
+<p><code>y ~ 5 + 7*X1 + 7*X2 + e</code> with <code>e ~ N(0, 1)</code></p>
 <div class="bogus-wrapper">
 <notextile>
 <figure class='code'><figcaption>
@@ -116,46 +133,158 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
 </figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>mkdir ~/.paths
-</span><span class='line'><span class="nb">cd</span> ~/.paths
-</span><span class='line'><span class="nb">echo</span> <span class="s1">&#39;CDPATH=~/.paths&#39;</span> &gt;&gt; ~/.bashrc
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+</pre></td><td class='code'><pre><code class='r'><span class='line'><span class="c1">#############################################################################</span>
+</span><span class='line'><span class="c1"># create two correlated variables and a dependent variable</span>
+</span><span class='line'><span class="c1"># n : number of points</span>
+</span><span class='line'><span class="c1"># p:correlation</span>
+</span><span class='line'>
+</span><span class='line'>datagen <span class="o">&lt;-</span> <span class="kr">function</span><span class="p">(</span>n <span class="p">,</span> p<span class="p">){</span>
+</span><span class='line'>  <span class="c1"># random points N(0,1)</span>
+</span><span class='line'>  x1 <span class="o">&lt;-</span> rnorm<span class="p">(</span>n<span class="p">)</span>
+</span><span class='line'>  x2 <span class="o">&lt;-</span> rnorm<span class="p">(</span>n<span class="p">)</span>
+</span><span class='line'>  X <span class="o">&lt;-</span> cbind<span class="p">(</span>x1<span class="p">,</span> x2<span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c1"># desired correlation matrix</span>
+</span><span class='line'>  R <span class="o">&lt;-</span> matrix<span class="p">(</span>c<span class="p">(</span><span class="m">1</span><span class="p">,</span> p<span class="p">,</span> p<span class="p">,</span> <span class="m">1</span><span class="p">),</span> ncol <span class="o">=</span> <span class="m">2</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c1"># use cholesky decomposition `t(U) %*% U = R`</span>
+</span><span class='line'>  U <span class="o">&lt;-</span> chol<span class="p">(</span>R<span class="p">)</span>
+</span><span class='line'>  corvars <span class="o">&lt;-</span> X <span class="o">%*%</span> U
+</span><span class='line'>
+</span><span class='line'>  <span class="c1"># create dependent variable after model:</span>
+</span><span class='line'>  <span class="c1"># y ~ 5 + 7 * X1 + 7 * X2 + e | E ~ N(0,10)</span>
+</span><span class='line'>  y <span class="o">&lt;-</span> <span class="m">5</span> <span class="o">+</span> <span class="m">7</span><span class="o">*</span>corvars<span class="p">[,</span><span class="m">1</span><span class="p">]</span> <span class="o">+</span> <span class="m">7</span><span class="o">*</span>corvars<span class="p">[,</span><span class="m">2</span><span class="p">]</span> <span class="o">+</span> rnorm<span class="p">(</span>n<span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">1</span><span class="p">)</span>
+</span><span class='line'>  df <span class="o">&lt;-</span> data.frame<span class="p">(</span>y<span class="p">,</span> corvars<span class="p">)</span>
+</span><span class='line'>  <span class="kr">return</span><span class="p">(</span>df<span class="p">)</span>
+</span><span class='line'><span class="p">}</span>
 </span></code></pre></td></tr></table></div></figure>
 </notextile>
 </div>
-<p>Then to add symbolic links use:</p>
+<p>Let’s see if it works. This creates two variables with 1000 observations with a correlation of 0.8 between them and a dependent variable.</p>
+<div class="bogus-wrapper">
+<notextile>
+<figure class='code'><figcaption>
+<span></span>
+</figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='r'><span class='line'>df1 <span class="o">&lt;-</span> datagen<span class="p">(</span>n <span class="o">=</span> <span class="m">1000</span><span class="p">,</span> p <span class="o">=</span> <span class="m">0.8</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+</notextile>
+</div>
+<p>The correlation between X1 and X2 is as desired nearly 0.8</p>
+<div class="bogus-wrapper">
+<notextile>
+<figure class='code'><figcaption>
+<span></span>
+</figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='r'><span class='line'>cor<span class="p">(</span>df1<span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+</notextile>
+</div>
 <div class="bogus-wrapper">
 <notextile>
 <figure class='code'><figcaption>
 <span></span>
 </figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>ln -s /my/very/long/path/name/to/my/project project
-</span><span class='line'>ln -s /some/other/very/long/path/to/my/backups backups
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='r'><span class='line'><span class="c1">##          y      X1      X2</span>
+</span><span class='line'><span class="c1">## y  1.00000 0.94390 0.94367</span>
+</span><span class='line'><span class="c1">## X1 0.94390 1.00000 0.79192</span>
+</span><span class='line'><span class="c1">## X2 0.94367 0.79192 1.00000</span>
 </span></code></pre></td></tr></table></div></figure>
 </notextile>
 </div>
-<p>To update your bashrc:</p>
-<div class="bogus-wrapper">
-<notextile>
-<figure class='code'><figcaption>
-<span></span>
-</figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">source</span> ~/.bashrc
-</span></code></pre></td></tr></table></div></figure>
-</notextile>
-</div>
-<p>Now you can enter the folders from anywhere by simply typing</p>
+<p>And the data follows the specified model.</p>
 <div class="bogus-wrapper">
 <notextile>
 <figure class='code'><figcaption>
 <span></span>
 </figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">cd </span>projects
-</span><span class='line'><span class="nb">cd </span>backups
+</pre></td><td class='code'><pre><code class='r'><span class='line'>mod <span class="o">&lt;-</span> lm<span class="p">(</span>y<span class="o">~</span>X1<span class="o">+</span>X2<span class="p">,</span> data <span class="o">=</span> df1<span class="p">)</span>
+</span><span class='line'>summary<span class="p">(</span>mod<span class="p">)</span>
 </span></code></pre></td></tr></table></div></figure>
 </notextile>
-</div></div>
+</div>
+<div class="bogus-wrapper">
+<notextile>
+<figure class='code'><figcaption>
+<span></span>
+</figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+</pre></td><td class='code'><pre><code class='r'><span class='line'><span class="c1">## </span>
+</span><span class='line'><span class="c1">## Call:</span>
+</span><span class='line'><span class="c1">## lm(formula = y ~ X1 + X2, data = df1)</span>
+</span><span class='line'><span class="c1">## </span>
+</span><span class='line'><span class="c1">## Residuals:</span>
+</span><span class='line'><span class="c1">##    Min     1Q Median     3Q    Max </span>
+</span><span class='line'><span class="c1">## -2.908 -0.685  0.008  0.692  3.180 </span>
+</span><span class='line'><span class="c1">## </span>
+</span><span class='line'><span class="c1">## Coefficients:</span>
+</span><span class='line'><span class="c1">##             Estimate Std. Error t value Pr(&gt;|t|)    </span>
+</span><span class='line'><span class="c1">## (Intercept)   5.0440     0.0316     160   &lt;2e-16 ***</span>
+</span><span class='line'><span class="c1">## X1            7.0517     0.0530     133   &lt;2e-16 ***</span>
+</span><span class='line'><span class="c1">## X2            6.9496     0.0524     133   &lt;2e-16 ***</span>
+</span><span class='line'><span class="c1">## ---</span>
+</span><span class='line'><span class="c1">## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</span>
+</span><span class='line'><span class="c1">## </span>
+</span><span class='line'><span class="c1">## Residual standard error: 0.997 on 997 degrees of freedom</span>
+</span><span class='line'><span class="c1">## Multiple R-squared:  0.994,   Adjusted R-squared:  0.994 </span>
+</span><span class='line'><span class="c1">## F-statistic: 8.48e+04 on 2 and 997 DF,  p-value: &lt;2e-16</span>
+</span></code></pre></td></tr></table></div></figure>
+</notextile>
+</div>
+<div class="bogus-wrapper">
+<notextile>
+<figure class='code'><figcaption>
+<span></span>
+</figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='r'><span class='line'>pairs<span class="p">(</span>df1<span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+</notextile>
+</div>
+<figure>
+<img src="../figure/2014-09-04-testing-rmd-example_datagen3.png" alt="plot of chunk example_datagen3" /><figcaption>plot of chunk example_datagen3</figcaption>
+</figure></div>
 
 
   <footer>
@@ -177,12 +306,12 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
   
 
 
-<time datetime="2014-07-04T11:03:16-04:00" pubdate data-updated="true">Jul 4<span>th</span>, 2014</time>
+<time datetime="2014-09-04T14:37:00-04:00" pubdate data-updated="true">Sep 4<span>th</span>, 2014</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/bash/'>bash</a>, <a class='category' href='/blog/categories/script/'>script</a>, <a class='category' href='/blog/categories/shell/'>shell</a>
+    <a class='category' href='/blog/categories/r/'>R</a>, <a class='category' href='/blog/categories/rmarkdown/'>Rmarkdown</a>
   
 </span>
 
@@ -200,10 +329,10 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2014/06/04/pic/" title="Previous Post: Go Habs Go">&laquo; Go Habs Go</a>
+        <a class="basic-alignment left" href="/blog/2014/08/20/rovigno/" title="Previous Post: Rovigno">&laquo; Rovigno</a>
       
       
-        <a class="basic-alignment right" href="/blog/2014/07/21/linux-thunderbird-and-mcgill-mail/" title="Next Post: Linux: Thunderbird and McGill mail">Linux: Thunderbird and McGill mail &raquo;</a>
+        <a class="basic-alignment right" href="/blog/2014/09/05/test-rmd/" title="Next Post: test rmd">test rmd &raquo;</a>
       
     </p>
   </footer>
@@ -334,8 +463,8 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://www.sahirbhatnagar.com/blog/2014/07/04/cdpath-in-bash/';
-        var disqus_url = 'http://www.sahirbhatnagar.com/blog/2014/07/04/cdpath-in-bash/';
+        var disqus_identifier = 'http://www.sahirbhatnagar.com/blog/2014/09/04/testing-rmd/';
+        var disqus_url = 'http://www.sahirbhatnagar.com/blog/2014/09/04/testing-rmd/';
         var disqus_script = 'embed.js';
       
     (function () {
