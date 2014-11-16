@@ -24,6 +24,18 @@ I realise this is a simple model. What amazes me with gradient descent is how no
 library(lasso2)
 ```
 
+```
+## R Package to solve regression problems while imposing
+## 	 an L1 constraint on the parameters. Based on S-plus Release 2.1
+## Copyright (C) 1998, 1999
+## Justin Lokhorst   <jlokhors@stats.adelaide.edu.au>
+## Berwin A. Turlach <bturlach@stats.adelaide.edu.au>
+## Bill Venables     <wvenable@stats.adelaide.edu.au>
+## 
+## Copyright (C) 2002
+## Martin Maechler <maechler@stat.math.ethz.ch>
+```
+
 ```r
 data(Prostate)
 
