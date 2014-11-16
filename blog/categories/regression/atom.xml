@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Regression | Linkage Disequilibrium]]></title>
   <link href="http://www.sahirbhatnagar.com/blog/categories/regression/atom.xml" rel="self"/>
   <link href="http://www.sahirbhatnagar.com/"/>
-  <updated>2014-11-15T23:39:44-05:00</updated>
+  <updated>2014-11-15T23:51:55-05:00</updated>
   <id>http://www.sahirbhatnagar.com/</id>
   <author>
     <name><![CDATA[Sahir Rai Bhatnagar]]></name>
@@ -22,17 +22,11 @@
 <p>I learned about gradient descent today for simple linear regression. The following is my code in R and I compare it to the <em>lm</em> function in base <em>R</em>.</p>
 <p>I am using the <strong>Prostate</strong> dataset from the <em>lasso2</em> package. The model I am fitting is:</p>
 <p><span class="math">\[ lpsa = \beta_0 + \beta_1 \times lcavol \]</span></p>
+<p>I realise this is a simple model. What amazes me with gradient descent is how no distributional assumptions are being made here (as far as I undertand) on the errors, yet you still get the correct result using closed form formulas. It’s probably also because of the simple objective function. I presume things wont be as nice in higher dimensional settings and/or with sparse data.</p>
+<!-- more -->
+
 <pre class="sourceCode r"><code class="sourceCode r"><span class="co">#prostate cancer data set</span>
 <span class="kw">library</span>(lasso2)</code></pre>
-<pre><code>## R Package to solve regression problems while imposing
-##   an L1 constraint on the parameters. Based on S-plus Release 2.1
-## Copyright (C) 1998, 1999
-## Justin Lokhorst   &lt;jlokhors@stats.adelaide.edu.au&gt;
-## Berwin A. Turlach &lt;bturlach@stats.adelaide.edu.au&gt;
-## Bill Venables     &lt;wvenable@stats.adelaide.edu.au&gt;
-## 
-## Copyright (C) 2002
-## Martin Maechler &lt;maechler@stat.math.ethz.ch&gt;</code></pre>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">data</span>(Prostate)
 
 <span class="co"># hypothesis</span>

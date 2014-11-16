@@ -109,7 +109,10 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
 <p>I learned about gradient descent today for simple linear regression. The following is my code in R and I compare it to the <em>lm</em> function in base <em>R</em>.</p>
 <p>I am using the <strong>Prostate</strong> dataset from the <em>lasso2</em> package. The model I am fitting is:</p>
 <p><span class="math">\[ lpsa = \beta_0 + \beta_1 \times lcavol \]</span></p>
-<div class="bogus-wrapper">
+<p>I realise this is a simple model. What amazes me with gradient descent is how no distributional assumptions are being made here (as far as I undertand) on the errors, yet you still get the correct result using closed form formulas. It’s probably also because of the simple objective function. I presume things wont be as nice in higher dimensional settings and/or with sparse data.</p>
+<!-- more -->
+
+<div class='bogus-wrapper'>
 <notextile>
 <figure class='code'><figcaption>
 <span></span>
@@ -120,32 +123,8 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
 </span></code></pre></td></tr></table></div></figure>
 </notextile>
 </div>
-<div class="bogus-wrapper">
-<notextile>
-<figure class='code'><figcaption>
-<span></span>
-</figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-</pre></td><td class='code'><pre><code class='r'><span class='line'><span class="c1">## R Package to solve regression problems while imposing</span>
-</span><span class='line'><span class="c1">##    an L1 constraint on the parameters. Based on S-plus Release 2.1</span>
-</span><span class='line'><span class="c1">## Copyright (C) 1998, 1999</span>
-</span><span class='line'><span class="c1">## Justin Lokhorst   &lt;jlokhors@stats.adelaide.edu.au&gt;</span>
-</span><span class='line'><span class="c1">## Berwin A. Turlach &lt;bturlach@stats.adelaide.edu.au&gt;</span>
-</span><span class='line'><span class="c1">## Bill Venables     &lt;wvenable@stats.adelaide.edu.au&gt;</span>
-</span><span class='line'><span class="c1">## </span>
-</span><span class='line'><span class="c1">## Copyright (C) 2002</span>
-</span><span class='line'><span class="c1">## Martin Maechler &lt;maechler@stat.math.ethz.ch&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-</notextile>
-</div>
-<div class="bogus-wrapper">
+
+<div class='bogus-wrapper'>
 <notextile>
 <figure class='code'><figcaption>
 <span></span>
@@ -228,7 +207,8 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
 </span></code></pre></td></tr></table></div></figure>
 </notextile>
 </div>
-<div class="bogus-wrapper">
+
+<div class='bogus-wrapper'>
 <notextile>
 <figure class='code'><figcaption>
 <span></span>
@@ -237,7 +217,8 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
 </span></code></pre></td></tr></table></div></figure>
 </notextile>
 </div>
-<div class="bogus-wrapper">
+
+<div class='bogus-wrapper'>
 <notextile>
 <figure class='code'><figcaption>
 <span></span>
@@ -248,7 +229,8 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
 </span></code></pre></td></tr></table></div></figure>
 </notextile>
 </div>
-<div class="bogus-wrapper">
+
+<div class='bogus-wrapper'>
 <notextile>
 <figure class='code'><figcaption>
 <span></span>
@@ -257,7 +239,8 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
 </span></code></pre></td></tr></table></div></figure>
 </notextile>
 </div>
-<div class="bogus-wrapper">
+
+<div class='bogus-wrapper'>
 <notextile>
 <figure class='code'><figcaption>
 <span></span>
@@ -270,7 +253,8 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
 </span></code></pre></td></tr></table></div></figure>
 </notextile>
 </div>
-<div class="bogus-wrapper">
+
+<div class='bogus-wrapper'>
 <notextile>
 <figure class='code'><figcaption>
 <span></span>
@@ -357,7 +341,7 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2014/09/05/test-rmd/" title="Previous Post: test rmd">&laquo; test rmd</a>
+        <a class="basic-alignment left" href="/blog/2014/08/20/rovigno/" title="Previous Post: Rovigno">&laquo; Rovigno</a>
       
       
     </p>
@@ -383,9 +367,7 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
 <li class='category'><a href='/blog/categories/mcgill/'>McGill (1)</a></li>
 <li class='category'><a href='/blog/categories/paris/'>Paris (2)</a></li>
 <li class='category'><a href='/blog/categories/photos/'>Photos (1)</a></li>
-<li class='category'><a href='/blog/categories/r/'>R (3)</a></li>
-<li class='category'><a href='/blog/categories/rmarkdown/'>RMarkdown (1)</a></li>
-<li class='category'><a href='/blog/categories/rmarkdown/'>Rmarkdown (1)</a></li>
+<li class='category'><a href='/blog/categories/r/'>R (1)</a></li>
 <li class='category'><a href='/blog/categories/rovigno/'>Rovigno (1)</a></li>
 <li class='category'><a href='/blog/categories/travel/'>Travel (3)</a></li>
 <li class='category'><a href='/blog/categories/bash/'>bash (1)</a></li>
@@ -405,19 +387,19 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
       </li>
     
       <li class="post">
-        <a href="/blog/2014/09/05/test-rmd/">Test Rmd</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/09/04/testing-rmd/">Testing Rmd</a>
-      </li>
-    
-      <li class="post">
         <a href="/blog/2014/08/20/rovigno/">Rovigno</a>
       </li>
     
       <li class="post">
         <a href="/blog/2014/08/18/a-day-in-paris/">A Day in Paris</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/08/16/travelling-to-paris/">Travelling to Paris</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/07/21/linux-thunderbird-and-mcgill-mail/">Linux: Thunderbird and McGill Mail</a>
       </li>
     
   </ul>
@@ -466,7 +448,7 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
 
 <section>
   <h1>Tag Cloud</h1>
-    <span id="tag-cloud"><embed type='application/x-shockwave-flash' src='/javascripts/tagcloud.swf'width='100%' height='250' bgcolor='#f5f9f2' id='tagcloudflash' name='tagcloudflash' quality='high' allowscriptaccess='always'flashvars="tcolor=0x333333&amp;tcolor2=0x333333&amp;hicolor=0x000000&amp;tspeed=100&amp;distr=true&amp;mode=tags&amp;tagcloud=%3Ctags%3E%3Ca+href%3D%27http%3A%2F%2Fwww.sahirbhatnagar.com%2Fblog%2Fcategories%2Fbash%27+style%3D%27font-size%3A+23.333333333333336%25%27%3Ebash%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fwww.sahirbhatnagar.com%2Fblog%2Fcategories%2Fcroatia%27+style%3D%27font-size%3A+23.333333333333336%25%27%3ECroatia%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fwww.sahirbhatnagar.com%2Fblog%2Fcategories%2Feurope%27+style%3D%27font-size%3A+50.0%25%27%3EEurope%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fwww.sahirbhatnagar.com%2Fblog%2Fcategories%2Flinux%27+style%3D%27font-size%3A+23.333333333333336%25%27%3ELinux%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fwww.sahirbhatnagar.com%2Fblog%2Fcategories%2Fmcgill%27+style%3D%27font-size%3A+23.333333333333336%25%27%3EMcGill%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fwww.sahirbhatnagar.com%2Fblog%2Fcategories%2Foptimization%27+style%3D%27font-size%3A+23.333333333333336%25%27%3Eoptimization%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fwww.sahirbhatnagar.com%2Fblog%2Fcategories%2Fparis%27+style%3D%27font-size%3A+36.66666666666667%25%27%3EParis%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fwww.sahirbhatnagar.com%2Fblog%2Fcategories%2Fphotos%27+style%3D%27font-size%3A+23.333333333333336%25%27%3EPhotos%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fwww.sahirbhatnagar.com%2Fblog%2Fcategories%2Fr%27+style%3D%27font-size%3A+50.0%25%27%3ER%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fwww.sahirbhatnagar.com%2Fblog%2Fcategories%2Fregression%27+style%3D%27font-size%3A+23.333333333333336%25%27%3Eregression%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fwww.sahirbhatnagar.com%2Fblog%2Fcategories%2Frmarkdown%27+style%3D%27font-size%3A+23.333333333333336%25%27%3ERmarkdown%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fwww.sahirbhatnagar.com%2Fblog%2Fcategories%2Frmarkdown%27+style%3D%27font-size%3A+23.333333333333336%25%27%3ERMarkdown%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fwww.sahirbhatnagar.com%2Fblog%2Fcategories%2Frovigno%27+style%3D%27font-size%3A+23.333333333333336%25%27%3ERovigno%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fwww.sahirbhatnagar.com%2Fblog%2Fcategories%2Fscript%27+style%3D%27font-size%3A+23.333333333333336%25%27%3Escript%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fwww.sahirbhatnagar.com%2Fblog%2Fcategories%2Fshell%27+style%3D%27font-size%3A+23.333333333333336%25%27%3Eshell%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fwww.sahirbhatnagar.com%2Fblog%2Fcategories%2Ftravel%27+style%3D%27font-size%3A+50.0%25%27%3ETravel%3C%2Fa%3E+%3C%2Ftags%3E"></span>
+    <span id="tag-cloud"><embed type='application/x-shockwave-flash' src='/javascripts/tagcloud.swf'width='100%' height='250' bgcolor='#f5f9f2' id='tagcloudflash' name='tagcloudflash' quality='high' allowscriptaccess='always'flashvars="tcolor=0x333333&amp;tcolor2=0x333333&amp;hicolor=0x000000&amp;tspeed=100&amp;distr=true&amp;mode=tags&amp;tagcloud=%3Ctags%3E%3Ca+href%3D%27http%3A%2F%2Fwww.sahirbhatnagar.com%2Fblog%2Fcategories%2Fbash%27+style%3D%27font-size%3A+23.333333333333336%25%27%3Ebash%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fwww.sahirbhatnagar.com%2Fblog%2Fcategories%2Fcroatia%27+style%3D%27font-size%3A+23.333333333333336%25%27%3ECroatia%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fwww.sahirbhatnagar.com%2Fblog%2Fcategories%2Feurope%27+style%3D%27font-size%3A+50.0%25%27%3EEurope%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fwww.sahirbhatnagar.com%2Fblog%2Fcategories%2Flinux%27+style%3D%27font-size%3A+23.333333333333336%25%27%3ELinux%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fwww.sahirbhatnagar.com%2Fblog%2Fcategories%2Fmcgill%27+style%3D%27font-size%3A+23.333333333333336%25%27%3EMcGill%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fwww.sahirbhatnagar.com%2Fblog%2Fcategories%2Foptimization%27+style%3D%27font-size%3A+23.333333333333336%25%27%3Eoptimization%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fwww.sahirbhatnagar.com%2Fblog%2Fcategories%2Fparis%27+style%3D%27font-size%3A+36.66666666666667%25%27%3EParis%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fwww.sahirbhatnagar.com%2Fblog%2Fcategories%2Fphotos%27+style%3D%27font-size%3A+23.333333333333336%25%27%3EPhotos%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fwww.sahirbhatnagar.com%2Fblog%2Fcategories%2Fr%27+style%3D%27font-size%3A+23.333333333333336%25%27%3ER%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fwww.sahirbhatnagar.com%2Fblog%2Fcategories%2Fregression%27+style%3D%27font-size%3A+23.333333333333336%25%27%3Eregression%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fwww.sahirbhatnagar.com%2Fblog%2Fcategories%2Frovigno%27+style%3D%27font-size%3A+23.333333333333336%25%27%3ERovigno%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fwww.sahirbhatnagar.com%2Fblog%2Fcategories%2Fscript%27+style%3D%27font-size%3A+23.333333333333336%25%27%3Escript%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fwww.sahirbhatnagar.com%2Fblog%2Fcategories%2Fshell%27+style%3D%27font-size%3A+23.333333333333336%25%27%3Eshell%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fwww.sahirbhatnagar.com%2Fblog%2Fcategories%2Ftravel%27+style%3D%27font-size%3A+50.0%25%27%3ETravel%3C%2Fa%3E+%3C%2Ftags%3E"></span>
 </section>
 
 
